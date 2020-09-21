@@ -1,0 +1,16 @@
+body.paper {
+  @mixin paper {
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+    transition: transform .3s,background-color .3s,box-shadow .6s;
+    background-color: white;
+  }
+  .summary {
+    @include paper;
+  }
+  .author-large {
+    @include paper;
+    display: inline-block;
+  }
+}

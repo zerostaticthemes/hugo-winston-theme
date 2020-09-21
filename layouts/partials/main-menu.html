@@ -1,0 +1,12 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Data.menu.main }}
+    <li>
+      <a href="{{ .url }}">
+        <span>{{ .name }}</span>
+      </a>
+    </li>
+    {{end}}
+  </ul>
+</div>

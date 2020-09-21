@@ -1,0 +1,14 @@
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include breakpoint('small') {
+    padding: 50px 50px 50px 50px;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  @include breakpoint('small') {
+    padding-top: 50px;
+  }
+}

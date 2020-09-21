@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:300,400,600,700,900&display=swap');
+:root {
+  --font-family-heading: 'Gothic', sans-serif;
+  --font-family-paragraph: Helvetica, sans-serif;
+  --font-family-mono: monospace;
+  --background-color: #ff1654;
+  --highlight: #16ffc1;
+  --text-color: set-text-color(v(background-color));
+  --heading-color: set-heading-color(v(background-color));
+}

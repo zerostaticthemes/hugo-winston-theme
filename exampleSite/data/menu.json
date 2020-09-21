@@ -1,0 +1,14 @@
+{
+  "main": [
+    {
+      "name": "Blog",
+      "url": "/blog",
+      "weight": 1
+    },
+    {
+      "name": "About",
+      "url": "/about",
+      "weight": 2
+    }
+  ]
+}

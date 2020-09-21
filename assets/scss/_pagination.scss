@@ -1,0 +1,25 @@
+ul.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 5px 8px;
+      border: 2px solid var(--heading-color);
+      border-right: none;
+    }
+    &.active {
+      a {
+      }
+    }
+    &:last-of-type {
+      a {
+        border-right: 2px solid var(--heading-color);
+      }
+    }
+  }
+}

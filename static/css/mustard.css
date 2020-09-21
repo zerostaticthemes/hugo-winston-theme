@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700,900&display=swap');
+
+:root {
+  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-paragraph: Helvetica, sans-serif;
+  --font-family-mono: monospace;
+  --background-color: #333333;
+  --highlight: #ff1654;
+  --text-color: set-text-color(v(background-color));
+  --heading-color: set-heading-color(v(background-color));
+}

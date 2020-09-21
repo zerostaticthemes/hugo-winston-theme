@@ -1,0 +1,9 @@
+<div class="footer">
+  {{ if .Site.Data.social.links }}
+  <div class="footer-social">
+    {{ range .Site.Data.social.links }}
+      {{ partial "social-icon.html" . }}
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

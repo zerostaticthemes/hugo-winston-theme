@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+
+  {{ if .Site.IsServer }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+  <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+  {{ else }}
+  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+  <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+  {{ end }}
+
+  {{ $selectedTheme := printf "%s%s%s" "css/" .Site.Data.theme.theme ".css" }}
+  <link rel="stylesheet" href="{{ $selectedTheme }}">
+
+</head>
+{{ $themeStyle := slice "" }}
+{{ if eq .Site.Data.theme.style.paper true }}{{ $themeStyle = $themeStyle | append "paper" }}{{ end }}
+{{ if eq .Site.Data.theme.style.frame true }}{{ $themeStyle = $themeStyle | append "frame" }}{{ end }}
+
+<body class='page{{ delimit $themeStyle " " }} {{ block "body_classes" . }}{{ end }}'>
+  {{ partial "main-menu-mobile.html" . }}
+  <div id="wrapper" class="wrapper">
+    {{ partial "theme-switcher.html" . }}
+    {{ partial "header.html" . }}
+    {{ block "main" . }}
+    {{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+
+  {{ $ntc := resources.Get "js/ntc.js" }}
+  {{ $themeSwitcher := resources.Get "js/theme-switcher.js" }}
+  {{ $scripts := resources.Get "js/scripts.js" }}
+
+  {{ $js := slice $ntc $themeSwitcher $scripts | resources.Concat "js/bundle.js" }}
+
+  {{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+
+  {{ block "footer_js" . }}
+  {{ end }}
+
+  {{ partial "google-analytics.html" . }}
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-blog{{ end }}
+
+{{ define "main" }}
+<div class="blog">
+  {{ if .Site.Data.theme.showAuthorOnPosts }}
+  {{ partial "author.html" . }}
+  {{ end }}
+  <div class="intro">
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.image }}
+    <img src="{{ .Params.image | relURL }}" />
+    {{ end }}
+  </div>
+  <div class="content {{ if .Site.Data.theme.paper }}paper{{ end }}">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

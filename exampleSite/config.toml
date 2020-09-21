@@ -1,0 +1,14 @@
+baseURL = "www.example.com"
+languageCode = "en-us"
+title = "Hugo Winston"
+themesDir = "../.."
+theme = "hugo-winston"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+paginate = 2
+
+[permalinks]
+  post = "/:year/:month/:day/:slug/"
+  pages = "/:filename/"

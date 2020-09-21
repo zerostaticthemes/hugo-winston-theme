@@ -1,0 +1,34 @@
+{
+  "google_analytics_id": "",
+  "showAuthorOnHomepage": true,
+  "showAuthorOnPosts": true,
+  "showPostsOnHomepage": true,
+  "addDot": true,
+  "showSummaryDescription": true,
+  "theme": "white",
+  "style": {
+    "paper": false,
+    "frame": true
+  },
+  "themes": [
+    {
+      "name": "white",
+      "swatch": "#ffffff"
+    },
+    {
+      "name": "strawberry",
+      "swatch": "#ff1654"
+    }
+  ],
+  "homepage_meta_tags": {
+    "meta_description": "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site.",
+    "meta_og_title": "Hugo Hero Theme",
+    "meta_og_type": "website",
+    "meta_og_url": "https://hugo-hero.netlify.com",
+    "meta_og_image": "https://raw.githubusercontent.com/JugglerX/hugo-hero-theme/master/images/tn.png",
+    "meta_og_description": "Hero is a multipurpose Hugo theme with fullscreen hero images and page sections. It contains content types for a business or portfolio site.",
+    "meta_twitter_card": "summary",
+    "meta_twitter_site": "@zerostaticio",
+    "meta_twitter_creator": "@zerostaticio"
+  }
+}

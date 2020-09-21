@@ -1,0 +1,40 @@
+.author {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid var(--heading-color);
+  }
+  .author-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .author-date {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.author-large {
+  font-size: 20px;
+  img {
+    width: 60px;
+    height: 60px;
+  }
+  .author-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  .author-title {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

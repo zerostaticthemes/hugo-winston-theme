@@ -1,0 +1,28 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "main" }}
+
+{{ if .Site.Data.theme.showAuthorOnHomepage }}
+{{ partial "author-large.html" . }}
+{{ end }}
+
+<div class="intro">
+  <h1>{{ .Title }}{{ if .Site.Data.theme.addDot }}<span class="dot">.</span>{{ end }}</h1>
+  {{/*  {{ if .Params.Subtitle }}<h2>{{ .Params.Subtitle }}</h2>{{ end }} */}}
+  {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+</div>
+
+{{.Content}}
+
+{{ if .Site.Data.theme.showPostsOnHomepage }}
+{{ $paginator := .Paginate (where .RegularPages "Type" "blog") }}
+{{ range $paginator.Pages }}
+{{ .Render "summary" }}
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}
+{{ end }}
+
+{{ define "footer_js" }}
+{{ end }}
