@@ -3,25 +3,23 @@
 
 {{ define "main" }}
 
-{{ if .Site.Data.theme.showAuthorOnHomepage }}
-{{ partial "author-large.html" . }}
-{{ end }}
+  {{ if .Site.Params.showAuthorOnHomepage }}
+    {{ partial "author-large.html" . }}
+  {{ end }}
 
-<div class="intro">
-  <h1>{{ .Title }}{{ if .Site.Data.theme.addDot }}<span class="dot">.</span>{{ end }}</h1>
-  {{/*  {{ if .Params.Subtitle }}<h2>{{ .Params.Subtitle }}</h2>{{ end }} */}}
-  {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
-</div>
+  <div class="intro">
+    <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    {{ .Content }}
+  </div>
 
-{{.Content}}
+  {{ if .Site.Params.showPostsOnHomepage }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+    {{ range $paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
 
-{{ if .Site.Data.theme.showPostsOnHomepage }}
-{{ $paginator := .Paginate (where .RegularPages "Type" "blog") }}
-{{ range $paginator.Pages }}
-{{ .Render "summary" }}
-{{ end }}
-{{ template "_internal/pagination.html" . }}
-{{ end }}
 {{ end }}
 
 {{ define "footer_js" }}

@@ -1,14 +1,14 @@
-{{ define "body_classes" }}page-single{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
 
 {{ define "main" }}
 <div class="intro">
-  <h1>{{ .Title }}{{ if .Site.Data.theme.addDot }}<span class="dot">.</span>{{ end }}</h1>
+  <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
   {{ if .Params.image }}
   <img src="{{ .Params.image | relURL }}" />
   {{ end }}
 </div>
 
-<div class="content {{ if .Site.Data.theme.paper }}paper{{ end }}">
+<div class="content">
   {{ .Content }}
 </div>
 {{ end }}

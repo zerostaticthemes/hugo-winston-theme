@@ -1,10 +1,10 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-blog{{ end }}
+{{ define "body_classes" }}page-blog-single{{ end }}
 
 {{ define "main" }}
 <div class="blog">
-  {{ if .Site.Data.theme.showAuthorOnPosts }}
-  {{ partial "author.html" . }}
+  {{ if .Site.Params.showAuthorOnPosts }}
+    {{ partial "author.html" . }}
   {{ end }}
   <div class="intro">
     <h1>{{ .Title }}</h1>
@@ -12,7 +12,7 @@
     <img src="{{ .Params.image | relURL }}" />
     {{ end }}
   </div>
-  <div class="content {{ if .Site.Data.theme.paper }}paper{{ end }}">
+  <div class="content">
     {{ .Content }}
   </div>
 </div>

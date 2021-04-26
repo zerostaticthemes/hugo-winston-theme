@@ -7,6 +7,9 @@
     font-size: 18px;
     line-height: 26px;
   }
+  .summary-date {
+    font-weight: bold;
+  }
   .summary-title {
     margin: 16px 0 16px 0;
     width: 80%;
@@ -18,7 +21,7 @@
       line-height: 58px;
     }
   }
-  .summary-date {
-    font-weight: bold;
+  .summary-description {
+    width: 80%;
   }
 }

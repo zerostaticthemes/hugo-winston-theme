@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "/"
 languageCode = "en-us"
 title = "Hugo Winston"
 themesDir = "../.."
@@ -7,8 +7,17 @@ theme = "hugo-winston"
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
-paginate = 2
+paginate = 3
+
+[params]
+  google_analytics_id = ""
+  showAuthorOnHomepage = true
+  showPostsOnHomepage = false
+  showAuthorOnPosts = true
+  showSummaryDescription = true
+  addFrame = true
+  addDot = true
 
 [permalinks]
-  post = "/:year/:month/:day/:slug/"
-  pages = "/:filename/"
+  posts = "blog/:year/:month/:title/"
+  pages = ":slug/"

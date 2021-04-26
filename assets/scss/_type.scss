@@ -1,0 +1,32 @@
+a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+  font-family: var(--font-family-heading);
+}
+p {
+  color: var(--text-color);
+  font-family: var(--font-family-paragraph);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    list-style: none;
+  }
+}

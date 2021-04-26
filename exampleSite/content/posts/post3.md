@@ -1,37 +1,32 @@
 ---
-layout: blog
-title: It's a beautiful thing, the destruction of words
-date: 2019-08-13
-description: 'As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. '
-image: images/cctv.jpeg
+title: The revolution will be complete when the language is perfect
+date: 2019-08-07
+description: 'As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. Then, with a movement which was as nearly as possible unconscious, he crumpled up the original message and any notes that he himself had made, and dropped them into the memory hole to be devoured by the flames.'
+image: images/cctv2.jpeg
 ---
 
 ## He moved over to the window
 
+Since about that time, war had been literally continuous, though strictly speaking it had not always been the same war. For several months during his childhood there had been confused street fighting in London itself, some of which he remembered vividly.
 
-Lorem markdownum comes; pro est [modo famulus](#pervenerat), quo quod neu
-manibus aether his nomine, Aurora, voce. Ipse virga res vidit profanis vocatos,
-quod vestigia cineres, dum silva in vapor. Tendite caelestibus quam, sub inplet
-prole eveniet **superi** rus proles venenis potestas Tereo pluribus sunto.
+Inside the flat a fruity voice was reading out a list of figures which had something to do with the production of pig iron. The voice came from an oblong metal plaque like a dulled mirror which formed part of the surface of the right-hand wall. Winston turned a switch and the voice sank somewhat, though the words were still distinguishable. The instrument (the telescreen, it was called) could be dimmed) but there was no way of shutting it off completely.
 
-Perque cessisse, hoc tum auras sinuosa. Pressant nec vinci primoque quoque
-funibus est: et tempore vetitorum? Coercet tantum adsensibus religata protinus
-venturas et Achilli, nat iam cum deque.
+He moved over to the window: a smallish, frail figure, the meagerness of his body merely emphasized by the blue overalls which were the uniform of the Party. His hair was very fair, his face naturally sanguine, his skin roughened by coarse soap and blunt razor blades and the cold of the winter that had just ended.
 
-## Heading 2
+- Saxum sustinuit pugnatum medere temptamenta vellera mihi
+- Thalamoque lugubris qui loco croceum
+- Torque exploratis ornum intexuit gestamina est
+- Verbis meorum canes intraverat simul in quem
+- Cutis mirabile tandemque ut in dominis Abarin
+- Marmore deus orant
+
+## Hos sum sex o quamvis Thoantis gentes
 
 Is polus Hymenaeus extrema communes, nos versus gramen, fervet: sincera quati.
 Dixit extulerat; iunctas et [Aeaciden Illa](http://egofateri.net/), visa
 [viris](http://euntemcrepuscula.com/subiecta.html). Ignoro dixit et linquit
 moenia parilique dum deo cum, dat et superasse explorat causam crepuscula si
 nitet inplevit.
-
-- Saxum sustinuit pugnatum medere temptamenta vellera mihi
-- Verbis meorum canes intraverat simul in quem
-- Cutis mirabile tandemque ut in dominis Abarin
-- Marmore deus orant
-
-### Heading 3
 
 Oriente nec radios nurus, quod undas, occupat conpescit femina est; resistite
 regno armenta suspirat. Mare condor dedi iussa Amoris et cacumine vellent Graios

@@ -1,17 +1,14 @@
-// Font
-
-// @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700,900&display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 :root {
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
   --font-family-mono: monospace;
-  --background-color: #ffffff;
-  --highlight: #7b16ff;
-  --text-color: #4e5157;
+  --base-color: #ffffff;
+  --base-offset-color: #eaeaea;
+  --highlight-color: #7b16ff;
   --heading-color: #1c1b1d;
+  --text-color: #4e5157;
   --edge: #e3fcf5;
 }
 
@@ -22,22 +19,19 @@ $breakpoints: (
 );
 
 @import 'normalize';
+@import 'type';
 @import 'breakpoints';
 @import 'layout';
 @import 'header';
 @import 'content';
 @import 'intro';
 @import 'pagination';
-@import 'hamburger';
+// @import 'hamburger';
 @import 'summary';
 @import 'social';
 @import 'author';
-// @import 'blog';
 @import 'pygments/github';
-@import 'theme-switcher';
-
 @import 'tweaks/dot';
-@import 'tweaks/paper';
 @import 'tweaks/frame';
 
 
@@ -46,7 +40,7 @@ html, body {
 }
 
 body {
-  background: var(--background-color);
+  background: var(--base-color);
   font-family: var(--font-family-paragraph);
   color: var(--text-color);
   margin: 0;
@@ -54,37 +48,5 @@ body {
   overflow-x: hidden;
   @include breakpoint('small') {
     padding: 50px;
-  }
-}
-
-a {
-  color: var(--highlight);
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-h1,
-h2,
-h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: var(--heading-color);
-  font-family: var(--font-family-heading);
-}
-p {
-  color: var(--text-color);
-  font-family: var(--font-family-paragraph);
-  font-size: 18px;
-  line-height: 24px;
-}
-
-ol,ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    list-style: none;
   }
 }
