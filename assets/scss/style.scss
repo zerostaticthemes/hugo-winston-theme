@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,500,600,700,900&display=swap');
-
 :root {
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
@@ -9,7 +7,6 @@
   --highlight-color: #7b16ff;
   --heading-color: #1c1b1d;
   --text-color: #4e5157;
-  --edge: #e3fcf5;
 }
 
 $breakpoints: (
@@ -26,14 +23,10 @@ $breakpoints: (
 @import 'content';
 @import 'intro';
 @import 'pagination';
-// @import 'hamburger';
 @import 'summary';
 @import 'social';
 @import 'author';
 @import 'pygments/github';
-@import 'tweaks/dot';
-@import 'tweaks/frame';
-
 
 html, body {
   box-sizing: border-box;

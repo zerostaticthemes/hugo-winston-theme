@@ -9,3 +9,12 @@
     padding-top: 50px;
   }
 }
+
+body.frame {
+  min-height: 100vh;
+  border: 20px solid var(--highlight-color);
+}
+
+.dot {
+  color: var(--highlight-color);
+}
