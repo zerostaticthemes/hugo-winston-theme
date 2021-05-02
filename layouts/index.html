@@ -10,9 +10,6 @@
   <div class="intro">
     <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
     <div class="intro-content">{{ .Content }}</div>
-    {{ if not .Site.Params.showPostsOnHomepage }}
-      <a class="read-more" href="{{ "posts" | relURL }}">Read More</a>
-    {{ end }}
   </div>
 
   {{ if .Site.Params.showPostsOnHomepage }}
