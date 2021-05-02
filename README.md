@@ -22,23 +22,6 @@ Hugo Winston is a bold minimal blogging theme
 - OG Meta data for Facebook and Twitter
 - Semantic HTML document structure
 
-# Hugo Installation
-
-To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
-
-### Check Hugo version (Hugo Extended is required!)
-
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the **Hugo Extended** version installed. If you are not using the extended version this theme will not work.
-
-To check your version of Hugo, run:
-
-```
-hugo version
-```
-
-This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown` You do not need to use version v0.51 specifically, it just needs to have the `/extended` part
-
-
 # Installation
 ### Install Hugo
 
