@@ -1,6 +1,6 @@
 # Hugo Winston Theme
 
-Hugo Winston is a bold minimal blogging theme
+Hugo Winston is a bold minimal blogging theme.
 
 [Live Demo](https://hugo-winston.netlify.app/) |
 [Zerostatic Themes](https://www.zerostatic.io/)

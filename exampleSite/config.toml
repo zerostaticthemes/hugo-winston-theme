@@ -1,4 +1,4 @@
-baseURL = "www.example.com"
+baseURL = "https://example.com"
 languageCode = "en-us"
 title = "Hugo Winston"
 themesDir = "../.."
