@@ -18,11 +18,23 @@
   h2 {
     font-size: 50px;
     line-height: 56px;
-    width: 80%;
+    @include breakpoint('small') {
+      width: 80%;
+    }
   }
   p {
     font-size: 20px;
     line-height: 26px;
+    @include breakpoint('small') {
+      width: 80%;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+  .read-more {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
     @include breakpoint('small') {
       font-size: 22px;
       line-height: 32px;

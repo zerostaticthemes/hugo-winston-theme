@@ -1,11 +1,11 @@
 name = "Hugo Winston"
 license = "MIT"
-licenselink = "https://github.com/JugglerX/hugo-hero-theme/blob/master/LICENSE"
-description = "Hero is a multipurpose theme with fullscreen hero images and fullwidth sections. It contains content types for a business or portfolio site."
+licenselink = "https://github.com/zerostaticthemes/hugo-winston/blob/master/LICENSE"
+description = "Hugo Winston is a bold minimal blogging theme"
 homepage = "https://github.com/jugglerx/hugo-hero-theme"
-tags = ["responsive","minimal","clean","company","portfolio","bootstrap","zerostatic"]
-features = ["services","work","fullwidth","hero images"]
-min_version = 0.51
+tags = ["blog","minimal","company","bootstrap","zerostatic"]
+features = ["blog"]
+min_version = 0.80
 
 [author]
   name = "Robert Austin"

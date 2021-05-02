@@ -1,0 +1,20 @@
+.footer {
+    margin-top: 30px;
+    @include breakpoint('small') {
+      padding-top: 40px;
+    }
+  }
+  
+  .social-icon {
+    margin-right: 10px;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        img {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  

@@ -18,14 +18,14 @@
 
   {{ block "meta_tags" . }}
     {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
-    {{ if .Params.meta_title }}<meta property="og:title" content="{{ .Params.meta_title }}"/>{{ else }}<meta property="og:title" content="{{ .Title }}"/>{{ end }}
+    <meta property="og:title" content="{{ .Title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
     {{ if .Params.image }}<meta property="og:image" content="{{ .Params.image | absURL }}"/>{{ end }}
     {{ if .Params.description }}<meta property="og:description" content="{{ .Params.description }}"/>{{ end }}
     <meta name="twitter:card" content="summary"/>
-    {{ if .Site.Params.seo.meta_twitter_site }}<meta name="twitter:site" content="{{ .Site.Params.seo.meta_twitter_site }}"/>{{ end }}
-    {{ if .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ .Site.Params.seo.meta_twitter_creator }}"/>{{ end }}
+    {{ if .Site.Params.twitter_handle }}<meta name="twitter:site" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
+    {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
   {{ end }}
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +33,6 @@
 </head>
 
 {{ $themeStyle := slice "" }}
-{{ if eq .Site.Params.addPaper true }}{{ $themeStyle = $themeStyle | append "paper" }}{{ end }}
 {{ if eq .Site.Params.addFrame true }}{{ $themeStyle = $themeStyle | append "frame" }}{{ end }}
 
 <body class='page{{ delimit $themeStyle " " }} {{ block "body_classes" . }}{{ end }}'>

@@ -1,4 +1,13 @@
 <div class='header'>
   <a class="header-logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  {{ partial "main-menu.html" . }}
+  <div class="menu-main">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+        {{end}}
+    </ul>
+  </div>
 </div>

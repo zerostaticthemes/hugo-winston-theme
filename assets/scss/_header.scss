@@ -1,22 +1,23 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
   font-size: 16px;
   @include breakpoint('small') {
     padding-bottom: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
   a.header-logo {
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
+    margin-right: 30px;
   }
 }
 
-.main-menu {
+.menu-main {
   display: none;
+  flex: 0;
   @include breakpoint('small') {
     display: block;
   }
@@ -26,7 +27,6 @@
     justify-content: flex-start;
     > li {
       margin-right: 10px;
-      text-transform: uppercase;
       > a {
         display: inline-block;
         text-decoration: none;
@@ -38,10 +38,6 @@
         > a {
           display: inline-block;
           font-weight: bold;
-          text-transform: uppercase;
-          text-decoration: none;
-          &:hover {
-          }
         }
       }
       &:last-of-type {

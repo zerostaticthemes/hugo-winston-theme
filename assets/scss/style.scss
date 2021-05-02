@@ -16,16 +16,14 @@ $breakpoints: (
 );
 
 @import 'normalize';
-@import 'type';
 @import 'breakpoints';
-@import 'layout';
 @import 'header';
+@import 'footer';
 @import 'content';
 @import 'intro';
-@import 'pagination';
 @import 'summary';
-@import 'social';
 @import 'author';
+@import 'pagination';
 @import 'pygments/github';
 
 html, body {
@@ -42,4 +40,13 @@ body {
   @include breakpoint('small') {
     padding: 50px;
   }
+  &.frame {
+    min-height: 100vh;
+    border: 18px solid var(--highlight-color);
+  }
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
 }

@@ -11,13 +11,9 @@ paginate = 3
 
 [params]
   google_analytics_id = ""
+  twitter_handle = "@zerostaticio"
   showAuthorOnHomepage = true
+  showAuthorOnPosts = false
   showPostsOnHomepage = false
-  showAuthorOnPosts = true
-  showSummaryDescription = true
   addFrame = true
   addDot = true
-
-[permalinks]
-  posts = "blog/:year/:month/:title/"
-  pages = ":slug/"

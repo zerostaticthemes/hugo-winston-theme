@@ -2,18 +2,18 @@
 {{ define "body_classes" }}page-blog-single{{ end }}
 
 {{ define "main" }}
-<div class="blog">
-  {{ if .Site.Params.showAuthorOnPosts }}
-    {{ partial "author.html" . }}
-  {{ end }}
-  <div class="intro">
-    <h1>{{ .Title }}</h1>
-    {{ if .Params.image }}
-    <img src="{{ .Params.image | relURL }}" />
+  <div class="blog">
+    {{ if .Site.Params.showAuthorOnPosts }}
+      {{ partial "author.html" . }}
     {{ end }}
+    <div class="intro">
+      <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+      {{ if .Params.image }}
+      <img src="{{ .Params.image | relURL }}" />
+      {{ end }}
+    </div>
+    <div class="content">
+      {{ .Content }}
+    </div>
   </div>
-  <div class="content">
-    {{ .Content }}
-  </div>
-</div>
 {{ end }}
