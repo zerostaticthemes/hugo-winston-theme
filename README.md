@@ -5,6 +5,8 @@ Hugo Winston is a bold minimal blogging theme.
 [Live Demo](https://hugo-winston.netlify.app/) |
 [Zerostatic Themes](https://www.zerostatic.io/)
 
+<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 ![Hugo Winston Theme screenshot](https://www.zerostatic.io/theme/hugo-winston/hugo-winston-screenshot.png)
 
 ## Theme features
@@ -125,6 +127,13 @@ This theme includes a `netlify.toml` which is configured to deploy to Netlify fr
 
 Most likely if you are deploying to Netlify and created a new Hugo site or added this theme to an existing Hugo site then you are not deploying from the `exampleSite` directory and you can delete the `netlify.toml` file.
 
-## License
+### Other Hugo Themes by Zerostatic
 
-If you fork or copy this theme the LICENSE file and the copyright notice on line 3 (where I am listed as the author) must not be changed. You cannot just replace the copyright line with your own name. Attribution in your README.md or on your site is also welcome but not required.
+- [Hugo Whisper](https://github.com/zerostaticthemes/hugo-whisper-theme)
+- [Hugo Serif](https://github.com/zerostaticthemes/hugo-serif-theme)
+- [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
+- [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
+- [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)
+
+
+🇦🇺 **Made in Australia** by Robert Austin - leave a star mate!
