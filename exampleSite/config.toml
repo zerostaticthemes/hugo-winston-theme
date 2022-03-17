@@ -17,10 +17,12 @@ paginate = 3
 [params]
   google_analytics_id = ""
   twitter_handle = "@zerostaticio"
-  
+
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false
 
   addFrame = true
   addDot = true
+
+  highlightColor = '#7b16ff'

@@ -4,7 +4,7 @@
   --font-family-mono: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
-  --highlight-color: #7b16ff;
+  --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
   --heading-color: #1c1b1d;
   --text-color: #4e5157;
 }
