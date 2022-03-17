@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/zerostaticthemes/hugo-winston/blob/master/LICENSE"
 description = "Hugo Winston is a bold minimal blogging theme"
 
-homepage = "https://github.com/jugglerx/hugo-hero-theme"
+homepage = "https://github.com/zerostaticthemes/hugo-winston-theme"
 demosite = "https://hugo-winston.netlify.app"
 
 tags = ["blog", "minimal", "clean", "Google analytics", "bootstrap", "zerostatic"]

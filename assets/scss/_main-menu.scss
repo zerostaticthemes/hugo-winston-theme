@@ -1,0 +1,32 @@
+
+.menu-main {
+  display: none;
+  flex: 0;
+  @include breakpoint('medium') {
+    display: block;
+  }
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    > li {
+      margin-right: 10px;
+      > a {
+        display: inline-block;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &.active {
+        > a {
+          display: inline-block;
+          font-weight: bold;
+        }
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

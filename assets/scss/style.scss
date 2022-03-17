@@ -24,6 +24,8 @@ $breakpoints: (
 @import 'summary';
 @import 'author';
 @import 'pagination';
+@import 'main-menu';
+@import 'main-menu-mobile';
 @import 'pygments/github';
 
 html, body {
@@ -35,7 +37,7 @@ body {
   font-family: var(--font-family-paragraph);
   color: var(--text-color);
   margin: 0;
-  padding: 30px;
+  padding: 20px;
   overflow-x: hidden;
   @include breakpoint('small') {
     padding: 50px;
