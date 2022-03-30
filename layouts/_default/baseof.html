@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
+  {{ if .Params.math }}{{ partial "katex.html" . }}{{ end }}
+
   {{ block "meta_tags" . }}
     {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
     <meta property="og:title" content="{{ .Title }}"/>

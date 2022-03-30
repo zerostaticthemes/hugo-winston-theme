@@ -5,4 +5,5 @@ image: images/writer.jpeg
 menu:
   main:
     name: "About"
+math: false
 ---
