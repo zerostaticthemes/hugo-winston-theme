@@ -77,11 +77,14 @@ ul {
     margin-top: 10px;
     margin-bottom: 20px;
     list-style: disc;
+    padding-left: 0;
     li {
       font-size: 18px;
       line-height: 20px;
       margin-bottom: 10px;
       margin-left: 0;
+      list-style-type: circle;
+      list-style-position: inside;
       @include breakpoint('small') {
         margin-left: 20px;
       }
