@@ -84,14 +84,10 @@ ul {
       margin-bottom: 10px;
       margin-left: 0;
       list-style-type: disc;
-      list-style-position: inside;
-      @include breakpoint('small') {
-        margin-left: 20px;
-      }
+      list-style-position: outside;
+      margin-left: 10px;
     }
-    @include breakpoint('small') {
-      margin-left: 20px;
-    }
+    margin-left: 10px;
   }
   a {
     text-decoration: underline;
