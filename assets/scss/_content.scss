@@ -146,3 +146,12 @@ ul {
 .dot {
   color: var(--highlight-color);
 }
+
+.footnotes {
+  ol {
+    list-style: decimal;
+    li {
+      list-style: decimal;
+    }
+  }
+}
