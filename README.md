@@ -5,8 +5,6 @@ Hugo Winston is a bold minimal blogging theme.
 [Live Demo](https://hugo-winston.netlify.app/) |
 [Zerostatic Themes](https://www.zerostatic.io/)
 
-<a href="https://www.buymeacoffee.com/zerostatic" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 ![Hugo Winston Theme screenshot](https://www.zerostatic.io/theme/hugo-winston/hugo-winston-screenshot.png)
 
 ## Theme features
@@ -25,6 +23,7 @@ Hugo Winston is a bold minimal blogging theme.
 - Semantic HTML document structure
 
 # Installation
+
 ### Install Hugo
 
 To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
@@ -52,6 +51,7 @@ This will create a fresh Hugo site in the folder `mynewsite`.
 ### Install theme with Git
 
 Clone this repo into the themes folder
+
 ```
 cd mynewsite
 git clone https://github.com/zerostaticthemes/hugo-winston-theme.git themes/hugo-winston-theme
@@ -123,6 +123,10 @@ Add you google analytics ID to the `config.toml`
 
 # Deploying to Netlify
 
+Use Netlify to deploy this theme. This theme contains a valid and tested `netlify.toml` - Feel free to use the 1-click deploy below.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zerostaticthemes/hugo-winston-theme)
+
 This theme includes a `netlify.toml` which is configured to deploy to Netlify from the `exampleSite` folder. See this discussion on how to deploy your site on Netlify from the `exampleSite` folder - https://discourse.gohugo.io/t/deploy-your-theme-to-netlify/15508
 
 Most likely if you are deploying to Netlify and created a new Hugo site or added this theme to an existing Hugo site then you are not deploying from the `exampleSite` directory and you can delete the `netlify.toml` file.
@@ -134,6 +138,5 @@ Most likely if you are deploying to Netlify and created a new Hugo site or added
 - [Hugo Winston](https://github.com/zerostaticthemes/hugo-winston-theme)
 - [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/)
 - [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/)
-
 
 🇦🇺 **Made in Australia** by Robert Austin - leave a star mate!
