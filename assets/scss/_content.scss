@@ -71,12 +71,23 @@ ul {
     margin-top: 30px;
     margin-bottom: 20px;
   }
+  ul {
+    list-style: disc;
+    li {
+      list-style: disc;
+    }
+  }
+  ol {
+    list-style: decimal;
+    li {
+      list-style: decimal;
+    }
+  }
   ul,
   ol {
     margin-left: 0;
     margin-top: 10px;
     margin-bottom: 20px;
-    list-style: disc;
     li {
       font-size: 18px;
       line-height: 20px;
