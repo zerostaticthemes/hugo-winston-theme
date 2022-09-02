@@ -1,7 +1,7 @@
 :root {
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
-  --font-family-mono: monospace;
+  --font-family-monospace: monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
   --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
