@@ -1,12 +1,11 @@
 ---
 title: It's a beautiful thing, the destruction of words
 date: 2018-10-30
-description: 'As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. '
+description: "As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. "
 image: images/cctv.jpeg
 ---
 
 ## He moved over to the window
-
 
 Lorem markdownum comes; pro est [modo famulus](#pervenerat), quo quod neu
 manibus aether his nomine, Aurora, voce. Ipse virga res vidit profanis vocatos,
@@ -46,13 +45,13 @@ quem bis cuius crede sparsas diversa diva. A inquit cingebant. Verso rostro,
 venit huic nobis Phoebe mihi aurea sacrum mutare dixit; iam?
 
 ```javascript
-$(window).scroll(function() {
+$(window).scroll(function () {
   // this will work when your window scrolled.
   var scroll = $(window).scrollTop(); //getting the scrolling height of window
   if (scroll > 100) {
-    $('.header').addClass('header-scrolled');
+    $(".header").addClass("header-scrolled");
   } else {
-    $('.header').removeClass('header-scrolled');
+    $(".header").removeClass("header-scrolled");
   }
 });
 ```

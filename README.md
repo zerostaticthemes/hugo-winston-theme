@@ -22,66 +22,46 @@ Hugo Winston is a bold minimal blogging theme.
 - OG Meta data for Facebook and Twitter
 - Semantic HTML document structure
 
-# Installation
+## Installation
 
-### Install Hugo
+**1. Install Hugo**
 
-To use this theme you will need to have Hugo installed. If you don't already have Hugo installed please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
+To use this theme you will first need to have Hugo installed. Please follow the official [installation guide](https://gohugo.io/getting-started/installing/)
 
-### Check Hugo version (Hugo 0.51+ Extended is required)
+> ⚠️ **Note:** Check your Hugo version - **Hugo Extended** is required!
 
-This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets. Please make sure you have the **Hugo Extended** version installed. If you are not using the extended version this theme will not not compile.
+This theme uses [Hugo Pipes](https://gohugo.io/hugo-pipes/scss-sass/) to compile SCSS and minify assets which means if you are not using the Hugo extended version this theme will not work. To check your version of Hugo, run `hugo version`. Make sure you see **/extended** after the version number, for example _Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown_ You do not need to use version v0.51 specifically, it just needs to have the _/extended_ part.
 
-To check your version of Hugo, run:
+**2. Create a new Hugo site**
 
-```
-hugo version
-```
-
-This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `Hugo Static Site Generator v0.51/extended darwin/amd64 BuildDate: unknown` You do not need to use version v0.51 specifically, you can use any version of Hugo above 0.51. It just needs to have the `/extended` part
-
-### Create a new Hugo site
+This will create a fresh Hugo site in the folder `mynewsite`.
 
 ```
 hugo new site mynewsite
 ```
 
-This will create a fresh Hugo site in the folder `mynewsite`.
+**3. Install the theme**
 
-### Install theme with Git
-
-Clone this repo into the themes folder
+Download or git clone this theme into the sites themes folder `mynewsite/themes`. You should end up with the following folder structure `mynewsite/themes/hugo-winston-theme`
 
 ```
 cd mynewsite
 git clone https://github.com/zerostaticthemes/hugo-winston-theme.git themes/hugo-winston-theme
 ```
 
-### Copy example content
+**4. Copy the example content**
 
-Copy the entire contents of the `mynewsite/themes/hugo-winston-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`
-
-To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
+Copy the entire contents of the `mynewsite/themes/hugo-winston-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
 
 ```
-cp -a themes/hugo-winston-theme/exampleSite/. .
+cp -a themes/hugo-serif-theme/exampleSite/. .
 ```
 
-### Update config.toml
-
-After you copy the `config.toml` into the root folder of your Hugo site you will need to update the `baseURL`, `themesDir` and `theme` values in `mynewsite/config.toml`
-
-```
-baseURL = "/"
-themesDir = "themes"
-theme = "hugo-winston-theme"
-```
-
-### Run Hugo
+**6. Run Hugo**
 
 After installing the theme for the first time, generate the Hugo site.
 
-You run this command from the root folder of your Hugo site ie `mynewsite/`
+You run this command from the root folder of your Hugo site ie `mynewsite`
 
 ```
 hugo
@@ -99,24 +79,25 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 ### Config options
 
-```
-// config.toml
+```toml
+# config.toml
 [params]
   google_analytics_id = ""
   twitter_handle = "@zerostaticio"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false
-  addFrame = true
   addDot = true
+  addFrame = true
+  highlightColor = '#7b16ff'
 ```
 
 ### Google Analytics
 
 Add you google analytics ID to the `config.toml`
 
-```
-// config.toml
+```toml
+# config.toml
 [params]
   google_analytics_id="UA-132398315-1"
 ```

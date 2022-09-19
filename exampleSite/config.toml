@@ -1,13 +1,12 @@
-baseURL = "https://example.com"
+baseURL = "/"
 languageCode = "en-us"
-title = "Hugo Winston"
-themesDir = "../.."
 theme = "hugo-winston-theme"
-
+themesDir = "themes"
+title = "Hugo Winston Theme"
+paginate = 3
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
-paginate = 3
 
 [module]
   [module.hugoVersion]
@@ -17,12 +16,9 @@ paginate = 3
 [params]
   google_analytics_id = ""
   twitter_handle = "@zerostaticio"
-
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showPostsOnHomepage = false
-
-  addFrame = true
   addDot = true
-
+  addFrame = true
   highlightColor = '#7b16ff'
