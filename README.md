@@ -94,12 +94,23 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
 
 ### Google Analytics
 
-Add you google analytics ID to the `config.toml`
+Add your google analytics ID to the `config.toml`
 
 ```toml
 # config.toml
 [params]
   google_analytics_id="UA-132398315-1"
+```
+
+### Plausible Analytics
+
+Add your plausible analytics domain to the `config.toml`.
+This is `data-domain` in your [tracking script code](https://plausible.io/docs/plausible-script).
+
+```
+// config.toml
+[params]
+  plausible_analytics_domain = "barryhennessy.com"
 ```
 
 # Deploying to Netlify
