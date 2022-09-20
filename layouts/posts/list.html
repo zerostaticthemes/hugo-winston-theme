@@ -1,4 +1,4 @@
-{{ define "body_classes" }}page-default-list{{ end }}
+{{ define "body_classes" }}page-blog-list{{ end }}
 
 {{ define "main" }}
   <div class="intro">
@@ -6,7 +6,9 @@
     {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
   </div>
   {{ .Content }}
-  {{ range .Pages }}
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+  {{ range $paginator.Pages }}
     {{ .Render "summary" }}
   {{ end }}
+  {{ partial "paginator" . }}
 {{ end }}

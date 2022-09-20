@@ -1,4 +1,3 @@
-{{ define "header_css" }}{{ end }}
 {{ define "body_classes" }}page-home{{ end }}
 
 {{ define "main" }}
@@ -17,7 +16,7 @@
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
-    {{ template "_internal/pagination.html" . }}
+    {{ partial "paginator" . }}
   {{ end }}
 
 {{ end }}
