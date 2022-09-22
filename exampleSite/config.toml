@@ -22,6 +22,11 @@ pygmentsUseClasses = true
   addDot = true
   addFrame = true
   highlightColor = '#7b16ff'
+  baseColor = "#ffffff"
+  baseOffsetColor = "#eaeaea"
+  headingColor = "#1c1b1d"
+  textColor = "#4e5157"
+  dotColor = "#7b16ff"
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]

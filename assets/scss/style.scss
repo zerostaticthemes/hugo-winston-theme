@@ -2,11 +2,12 @@
   --font-family-heading: 'Poppins', sans-serif;
   --font-family-paragraph: Helvetica, sans-serif;
   --font-family-monospace: monospace;
-  --base-color: #ffffff;
-  --base-offset-color: #eaeaea;
+  --base-color: {{ .Site.Params.baseColor | default "#ffffff" }};
+  --base-offset-color: {{ .Site.Params.baseOffsetColor | default "#eaeaea" }};
   --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
-  --heading-color: #1c1b1d;
-  --text-color: #4e5157;
+  --heading-color: {{ .Site.Params.headingColor | default "#1c1b1d" }};
+  --text-color: {{ .Site.Params.textColor | default "#4e5157" }};
+  --dot-color: {{ .Site.Params.dotColor | default "#7b16ff" }};
 }
 
 $breakpoints: (
