@@ -2,6 +2,7 @@ name = "Hugo Winston"
 license = "MIT"
 licenselink = "https://github.com/zerostaticthemes/hugo-winston/blob/master/LICENSE"
 description = "Hugo Winston is a bold minimal blogging theme"
+disqusShortname = ""
 
 homepage = "https://github.com/zerostaticthemes/hugo-winston-theme"
 demosite = "https://hugo-winston.netlify.app"
