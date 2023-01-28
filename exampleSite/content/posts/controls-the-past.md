@@ -1,8 +1,12 @@
 ---
-title: Who controls the past controls the future. Who controls the present controls the past.
+title: Who controls the past controls the future. Who controls the present controls the past
 date: 2018-06-07
 description: "As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. Then, with a movement which was as nearly as possible unconscious, he crumpled up the original message and any notes that he himself had made, and dropped them into the memory hole to be devoured by the flames."
 image: images/cctv2.jpeg
+tags:
+   - time
+   - writing 
+   - lorem 
 ---
 
 ## He moved over to the window

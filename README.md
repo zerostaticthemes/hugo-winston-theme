@@ -54,7 +54,7 @@ git clone https://github.com/zerostaticthemes/hugo-winston-theme.git themes/hugo
 Copy the entire contents of the `mynewsite/themes/hugo-winston-theme/exampleSite/` folder to root folder of your Hugo site, ie `mynewsite/`. To copy the files using terminal, make sure you are still in the projects root, ie the `mynewsite` folder.
 
 ```
-cp -a themes/hugo-serif-theme/exampleSite/. .
+cp -a themes/hugo-winston-theme/exampleSite/. .
 ```
 
 **6. Run Hugo**
