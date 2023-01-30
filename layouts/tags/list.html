@@ -1,0 +1,15 @@
+{{ define "body_classes" }}page-default-list{{ end }}
+
+{{ define "main" }}
+  <div class="intro">
+    <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+  </div>
+  {{ .Content }}
+  {{ range.Pages }}
+    <div class="summary">
+      <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}<span class="dot">.</span></a></h2>
+      <p class="summary-description">{{ .Params.description }}</p>
+    </div>
+  {{ end }}
+{{ end }}
