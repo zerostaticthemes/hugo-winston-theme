@@ -1,5 +1,5 @@
 <div class="author">
-  <img width="30" class="author-image" src="{{ .Site.Data.author.image | relURL }}" />
+  <img width="30" class="author-image" src="{{ .Site.Data.author.image | relURL }}" alt="{{ .Site.Data.author.name }}" />
   <span class="author-name">{{ .Site.Data.author.name }}</span>
   <span class="author-divider"></span>
   <span class="author-date">{{ dateFormat "January 2, 2006" .Date }}</span>
