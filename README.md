@@ -89,6 +89,9 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
   showPostsOnHomepage = false
   addDot = true
   addFrame = true
+  fontFamilyHeading = "'Poppins', sans-serif"
+  fontFamilyParagraph = "'Helvetica', sans-serif"
+  fontFamilyMonospace = "monospace"
   highlightColor = '#7b16ff'
   baseColor = "#ffffff"
   baseOffsetColor = "#eaeaea"
