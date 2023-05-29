@@ -1,7 +1,7 @@
 :root {
-  --font-family-heading: 'Poppins', sans-serif;
-  --font-family-paragraph: Helvetica, sans-serif;
-  --font-family-monospace: monospace;
+  --font-family-heading: {{ .Site.Params.fontFamilyHeading | default "'Poppins', sans-serif" }};
+  --font-family-paragraph: {{ .Site.Params.fontFamilyParagraph | default "'Helvetica', sans-serif" }};
+  --font-family-monospace: {{ .Site.Params.fontFamilyMonospace | default "monospace" }};
   --base-color: {{ .Site.Params.baseColor | default "#ffffff" }};
   --base-offset-color: {{ .Site.Params.baseOffsetColor | default "#eaeaea" }};
   --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
