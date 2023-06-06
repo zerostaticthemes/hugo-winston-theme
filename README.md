@@ -86,19 +86,24 @@ Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your b
   twitter_handle = "@zerostaticio"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
-  showPostsOnHomepage = false
+  showIntroContentOnHomepage = true
+  showPostsOnHomepage = true
+  usePaginationOnHomepage = false
+  limitPostsOnHomepage = 3 # only used if usePaginationOnHomepage is false
+  sortPostsByDateOldestFirst = false
   addDot = true
   addFrame = true
-  fontFamilyHeading = "'Poppins', sans-serif"
-  fontFamilyParagraph = "'Helvetica', sans-serif"
-  fontFamilyMonospace = "monospace"
   highlightColor = '#7b16ff'
   baseColor = "#ffffff"
   baseOffsetColor = "#eaeaea"
-  highlightColor = "#7b16ff"
-  dotColor = "#7b16ff"
   headingColor = "#1c1b1d"
   textColor = "#4e5157"
+  dotColor = "#7b16ff"
+  enableGoogleFonts = true 
+  googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+  fontFamilyHeading = "Poppins"
+  fontFamilyParagraph = "Helvetica"
+  fontFamilyMonospace = "monospace"
 ```
 
 ### Google Analytics

@@ -8,15 +8,33 @@
 
   <div class="intro">
     <h1>{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
-    <div class="intro-content">{{ .Content }}</div>
+    {{ if .Site.Params.showIntroContentOnHomepage}}
+      <div class="intro-content">{{ .Content }}</div>
+    {{ end }}
   </div>
 
   {{ if .Site.Params.showPostsOnHomepage }}
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-    {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
+
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ $sorted := ($pages.ByParam "date").Reverse }}
+    {{ if .Site.Params.sortPostsByDateOldestFirst }}
+      {{ $sorted = $pages.ByParam "date" }}
     {{ end }}
-    {{ partial "paginator" . }}
+
+    {{ $paginator := .Paginate $sorted }}
+
+    {{ if .Site.Params.usePaginationOnHomepage }}
+      {{ range $paginator.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+      {{ partial "paginator" . }}
+    {{ else }}
+      {{ $limit := .Site.Params.limitPostsOnHomepage | default 3 }}
+      {{ range first $limit $sorted}}
+        {{ .Render "summary" }}
+      {{ end }}
+      <a class="view-more" href="/posts">More Posts</a>
+    {{ end }}
   {{ end }}
 
 {{ end }}

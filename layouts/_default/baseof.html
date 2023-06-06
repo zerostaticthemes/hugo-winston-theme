@@ -9,13 +9,17 @@
   <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
   <link rel="canonical" href="{{ .Permalink }}" />
 
-  {{ if .Site.IsServer }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
-  <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
-  {{ else }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
-  <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
-  {{ end }}
+  {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+    {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" false) }}
+    {{ $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" }}
+    <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
+    <link rel="stylesheet" href="{{ ($extended | minify | fingerprint).RelPermalink }}">
+  {{- else }}
+    {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
+    {{ $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" }}
+    <link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+    <link rel="stylesheet" href="{{ ($extended).RelPermalink }}">
+  {{- end }}
 
   {{ block "meta_tags" . }}
     {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}"/>{{ end }}
@@ -29,8 +33,12 @@
     {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
   {{ end }}
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  {{ if and .Site.Params.googleFontsUrl .Site.Params.enableGoogleFonts }}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="{{ .Site.Params.googleFontsUrl }}" rel="stylesheet">
+  {{ end }}
+
+  {{ partial "extend-head.html" . }}
 </head>
 
 {{ $themeStyle := slice "" }}
@@ -49,10 +57,10 @@
 
   {{ $js := slice $scripts | resources.Concat "js/bundle.js" }}
 
-  {{ if .Site.IsServer }}
-  <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+  {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+    <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>
   {{ else }}
-  <script type="text/javascript" src="{{ ($js | minify | fingerprint).RelPermalink }}"></script>
+    <script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
   {{ block "footer_js" . }}
@@ -60,6 +68,7 @@
 
   {{ partial "google-analytics.html" . }}
   {{ partial "plausible-analytics.html" . }}
+  {{ partial "extend-footer.html" . }}
 
 </body>
 </html>
