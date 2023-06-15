@@ -143,7 +143,7 @@ This theme includes a `netlify.toml` which is [configured to deploy to Netlify](
 - [Hugo Advance](https://www.zerostatic.io/theme/hugo-advance/) - Premium advanced multi page business & marketing theme
 - [Hugo Paradigm](https://www.zerostatic.io/theme/hugo-paradigm/) - Premium landing page + site builder theme
 - [Hugo Lever](https://www.zerostatic.io/theme/hugo-lever/) - Premium personal / bio theme
-- [Hugo Shared](https://www.zerostatic.io/theme/hugo-lever/) - Premium SAAS / landing page theme
+- [Hugo Shard](https://www.zerostatic.io/theme/hugo-lever/) - Premium SAAS / landing page theme
 
 ### Find hundreds more Hugo themes on Built At Lightspeed
 
