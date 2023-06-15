@@ -147,5 +147,4 @@ This theme includes a `netlify.toml` which is [configured to deploy to Netlify](
 
 ### Find hundreds more Hugo themes on Built At Lightspeed
 
-[![Built At Lightspeed Hugo themes directory screenshot](https://www.zerostatic.io/images/builtatlightspeed-hugo-themes.jpg)](https://builtatlightspeed.com/category/hugo)
-
+[<img alt="Built At Lightspeed Hugo themes directory screenshot" width="400px" src="https://www.zerostatic.io/images/builtatlightspeed-hugo-themes.jpg" />](https://builtatlightspeed.com/category/hugo)
