@@ -5,8 +5,8 @@ description: "As soon as Winston had dealt with each of the messages, he clipped
 image: images/cctv.jpeg
 imageAltAttribute: CCTV Cameras
 tags:
-   - writing 
-   - lorem 
+   - liberty 
+   - surveillance
 ---
 
 # He moved over to the window

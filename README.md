@@ -75,6 +75,14 @@ hugo server
 
 Now enter [`localhost:1313`](http://localhost:1313) in the address bar of your browser.
 
+# Localhost inside exampleSite
+
+You can run this site without installing it as a hugo theme using the following command. I use this for theme development.
+
+```
+hugo server --source=exampleSite --theme=../..
+```
+
 # Configuration
 
 ### Config options
