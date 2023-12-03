@@ -33,11 +33,6 @@
     {{ if .Site.Params.twitter_handle }}<meta name="twitter:creator" content="{{ .Site.Params.twitter_handle }}"/>{{ end }}
   {{ end }}
 
-  {{ if and .Site.Params.googleFontsUrl .Site.Params.enableGoogleFonts }}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="{{ .Site.Params.googleFontsUrl }}" rel="stylesheet">
-  {{ end }}
-
   {{ partial "extend-head.html" . }}
 </head>
 
@@ -71,4 +66,9 @@
   {{ partial "extend-footer.html" . }}
 
 </body>
+
+{{ if and .Site.Params.googleFontsUrl .Site.Params.enableGoogleFonts }}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="{{ .Site.Params.googleFontsUrl }}" rel="stylesheet">
+{{ end }}
 </html>
