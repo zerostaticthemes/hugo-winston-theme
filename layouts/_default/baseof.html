@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ or site.Language.LanguageCode site.LanguageLang }}">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="{{ .Site.BaseURL }}favicon.png">
+  <link rel="icon" href="{{ "favicon.png" | absLangURL }}>
   <link rel="canonical" href="{{ .Permalink }}" />
 
   {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
