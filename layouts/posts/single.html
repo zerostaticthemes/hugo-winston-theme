@@ -11,6 +11,11 @@
       <img alt="{{.Params.imageAltAttribute | default "Article hero image"}}" src="{{ .Params.image | relURL }}" />
       {{ end }}
     </div>
+    {{ if .Site.Params.showReadTimeOnPosts }}
+    <div class="readtime-container">
+        <span class="readtime-text">{{ .ReadingTime }} min{{ if (ne .ReadingTime 1) }}s{{ end }} to read</span>
+    </div>
+    {{ end }}
     <div class="content">
       {{ .Content }}
     </div>
