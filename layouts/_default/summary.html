@@ -1,7 +1,8 @@
 <div class="summary">
   {{ if .Site.Params.showAuthorOnPosts }}
     {{ partial "author.html" . }}
-  {{ else }}
+  {{ end }}
+  {{ if isset .Params "date" }}
     <div class="summary-date">{{ dateFormat "Jan 2, 2006" .Date }}</div>
   {{ end }}
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
