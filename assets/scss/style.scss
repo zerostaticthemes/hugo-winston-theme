@@ -1,3 +1,16 @@
+@use 'breakpoints' as *;
+@use 'normalize';
+@use 'header';
+@use 'footer';
+@use 'content';
+@use 'intro';
+@use 'summary';
+@use 'author';
+@use 'pagination';
+@use 'main-menu';
+@use 'main-menu-mobile';
+@use 'pygments/github';
+
 :root {
   --font-family-heading: {{ .Site.Params.fontFamilyHeading | default "'Poppins', sans-serif" }};
   --font-family-paragraph: {{ .Site.Params.fontFamilyParagraph | default "'Helvetica', sans-serif" }};
@@ -9,25 +22,6 @@
   --text-color: {{ .Site.Params.textColor | default "#4e5157" }};
   --dot-color: {{ .Site.Params.dotColor | default "#7b16ff" }};
 }
-
-$breakpoints: (
-  'small': 767px,
-  'medium': 992px,
-  'large': 1200px,
-);
-
-@import 'normalize';
-@import 'breakpoints';
-@import 'header';
-@import 'footer';
-@import 'content';
-@import 'intro';
-@import 'summary';
-@import 'author';
-@import 'pagination';
-@import 'main-menu';
-@import 'main-menu-mobile';
-@import 'pygments/github';
 
 html, body {
   box-sizing: border-box;

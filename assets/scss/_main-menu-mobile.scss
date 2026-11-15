@@ -1,3 +1,5 @@
+@use 'breakpoints' as *;
+
 .menu-main-mobile {
   position: fixed;
   background: var(--highlight-color);

@@ -1,3 +1,5 @@
+@use 'breakpoints' as *;
+
 .footer {
     margin-top: 30px;
     @include breakpoint('small') {
