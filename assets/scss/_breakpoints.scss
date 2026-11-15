@@ -1,8 +1,10 @@
+@use 'sass:map';
+
 @mixin breakpoint($breakpoint) {
   // If the key exists in the map
-  @if map-has-key($breakpoints, $breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
     // Prints a media query based on the value
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
       @content;
     }
   }
